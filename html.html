@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш путеводитель по миру Genshin Impact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ваш путеводитель по миру Genshin Impact</h1>
+        <nav>
+            <button onclick="showModal('artifacts')">Артефакты</button>
+            <button onclick="showModal('items')">Предметы</button>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <p>В настоящий момент есть огромное количество ресурсов с полезной информацией...</p>
+            <!-- Оставил только начало текста для краткости, добавьте остальное из предыдущего кода -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 genshin-info.ru</p>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div id="artifacts-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal('artifacts')">&times;</span>
+            <h2>Типы артефактов в Genshin Impact</h2>
+            <ul>
+                <li>Цветок жизни (HP)</li>
+                <li>Перо смерти (ATK)</li>
+                <li>Пески времени (разные бонусы)</li>
+                <li>Кубок пространства (элементальный урон)</li>
+                <li>Корона разума (CRIT Rate, CRIT DMG)</li>
+            </ul>
+        </div>
+    </div>
+    <div id="items-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal('items')">&times;</span>
+            <h2>Типы предметов в Genshin Impact</h2>
+            <ul>
+                <li>Материалы возвышения персонажей</li>
+                <li>Материалы возвышения оружия</li>
+                <li>Мора (валюта)</li>
+                <li>Еда (восстановление HP)</li>
+                <li>Ресурсы для крафта</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
